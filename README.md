@@ -2,7 +2,7 @@
  
 Was Nayon und Tamer besprochen haben.
 
-Jede hat seine eigene Seite, in der er die Infos hochlädt.
+Jeder hat seine eigene Seite, in der er die Infos hochlädt.
 
 Nayon macht die Hautpseite (E-Business.html), in der er die die App erklärt.
 Anil die Finanzenseite (Finanzen.html), da kannst du sagen wie wir geld bekommen (Über partnerschaften und Spenden oder so).
