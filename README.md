@@ -5,7 +5,7 @@ Guten Tag, Frau Scholl, hier haben wir eine Anleitung für Sie vorbereitet, wie 
 ## Schritte zur Installation und Ausführung
 
 1. **Projekt herunterladen**
-   - Laden Sie das Projekt von **GitHub** herunter und entpacken Sie es, falls erforderlich.
+   - Laden Sie das Projekt von **GitHub** herunter oder entpacken sie die Vorliegende ZIP Datei.
 
 2. **Projekt in VS Code öffnen**
    - Öffnen Sie den entpackten Projektordner in **Visual Studio Code (VS Code)**.
@@ -21,3 +21,7 @@ Guten Tag, Frau Scholl, hier haben wir eine Anleitung für Sie vorbereitet, wie 
    - Klicken Sie auf **"Go Live"**, um die Website im Browser zu starten.
 
 Die Website sollte nun in einem neuen Browser-Tab geöffnet werden.
+
+***Ein kleiner Hinweis, es kann sein, dass wenn Sie die Internetseite laden/öffnen, das Design nicht richtig geladen wird. Laden sie die Seite dann bitte neu oder klicken sie auf einer der Links.***
+
+***Nicht alle Buttons führen auf andere Elemente weiter, wir haben diese nur implementiert, um zu simulieren, wie es auf einer richtigen Website aussehen würde***
