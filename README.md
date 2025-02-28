@@ -1,12 +1,25 @@
 # FeelSave-Infoseite
  
-Was Nayon und Tamer besprochen haben.
+Guten Tag, Frau Scholl, hier haben wir eine Anleitung für Sie vorbereitet, wie man unsere Internetseite ausführt.
 
-Jeder hat seine eigene Seite, in der er die Infos hochlädt.
+# Anleitung zur Ausführung der Website
 
-Nayon macht die Hautpseite (E-Business.html), in der er die die App erklärt.
-Anil die Finanzenseite (Finanzen.html), da kannst du sagen wie wir geld bekommen (Über partnerschaften und Spenden oder so).
-Veysel macht die Moral/Ethikseite (Ethik.html), da kannst du drei fragen beantworten wie warum wir so eine app brauchen und wir nicht der polizei vertrauen.
-Tamer macht die Datenseite (Daten.html), und sagt was für Daten gesammelt werden und worauf wir uns fokusieren.
+## Schritte zur Installation und Ausführung
 
-Als Extra kann man ja so ein Impressum machen oder so. Vllt was anderes.
+1. **Projekt herunterladen**
+   - Laden Sie das Projekt von **GitHub** herunter und entpacken Sie es, falls erforderlich.
+
+2. **Projekt in VS Code öffnen**
+   - Öffnen Sie den entpackten Projektordner in **Visual Studio Code (VS Code)**.
+
+3. **Live Server Erweiterung installieren**
+   - Klicken Sie in VS Code auf das **Erweiterungen-Symbol** (links in der Seitenleiste).
+   - Suchen Sie nach **"Live Server"**.
+   - Oder auch über den Link: "https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"
+   - Installieren Sie die Erweiterung von **Ritwick Dey**.
+
+4. **Live Server starten**
+   - Nach der Installation erscheint unten rechts in VS Code ein Button mit der Aufschrift **"Go Live"**.
+   - Klicken Sie auf **"Go Live"**, um die Website im Browser zu starten.
+
+Die Website sollte nun in einem neuen Browser-Tab geöffnet werden.
