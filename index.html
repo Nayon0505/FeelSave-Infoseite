@@ -4,45 +4,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FeelSafe - Startseite</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    /* Custom Styling innerhalb der bestehenden Struktur */
+    #hero {
+      background: linear-gradient(rgba(13, 110, 253, 0.9), rgba(9, 94, 236, 0.9)),
+                  url('https://source.unsplash.com/random/1920x1080/?safety') center/cover;
+      color: white;
+      padding: 8rem 0;
+    }
+
+    .feature-item {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      transition: transform 0.3s;
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    }
+
+    .feature-item:hover {
+      transform: translateY(-5px);
+    }
+
+    blockquote {
+      border-left: 4px solid #0d6efd;
+      padding-left: 1.5rem;
+      font-style: italic;
+    }
+
+    .section-title {
+      position: relative;
+      padding-bottom: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: #0d6efd;
+    }
+
+    #cta {
+      background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+      padding: 4rem 0;
+    }
+
+    .btn-cta {
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
 
   <div id="navbar-container"></div>
 
-  <section id="hero" class="bg-light py-5">
-    <div class="container text-center">
-      <h1 class="display-4">Willkommen bei FeelSafe</h1>
-      <p class="lead">Dein digitales Sicherheitsgefühl - diskret, zuverlässig und benutzerfreundlich.</p>
+  <section id="hero" class="text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-4">Willkommen bei <span class="text-warning">FeelSafe</span></h1>
+      <p class="lead fs-3 mb-5">Dein digitales Sicherheitsgefühl - diskret und zuverlässig</p>
+      <div class="d-flex gap-3 justify-content-center">
+        <a href="https://github.com/Nayon0505/FeelSave.git" class="btn btn-light btn-lg px-5 rounded-pill">Jetzt starten</a>
+      </div>
     </div>
   </section>
   
   <section id="overview" class="py-5">
     <div class="container">
-      <h2 class="text-center">Über FeelSafe</h2>
-      <p>
-        FeelSafe ist eine innovative Sicherheitslösung, die vor allem Frauen und Kindern dabei hilft, sich in unsicheren Situationen sicher zu fühlen. Unsere App bietet eine diskrete SOS-Auslösung, standortbasierte Notfallalarme und höchste Datenschutzstandards - alles, um dir in kritischen Momenten schnell und zuverlässig zu helfen.
+      <h2 class="text-center section-title">Über FeelSafe</h2>
+      <p class="lead text-center mx-auto" style="max-width: 800px;">
+        FeelSafe ist Ihre innovative Sicherheitslösung, entwickelt um Frauen und Kindern in unsicheren Situationen Schutz zu bieten. Durch diskrete Notfallfunktionen und Echtzeit-Standortübermittlung geben wir Ihnen die Sicherheit zurück.
       </p>
     </div>
   </section>
   
   <section id="features" class="bg-light py-5">
     <div class="container">
-      <h2 class="text-center">Unsere Funktionen</h2>
-      <div class="row text-center mt-4">
+      <h2 class="text-center section-title mb-5">Unsere Funktionen</h2>
+      <div class="row g-4">
         <div class="col-md-4">
-          <h4>SOS-Notruf</h4>
-          <p>Mit nur einem unauffälligen Klick kannst du schnell Hilfe rufen.</p>
+          <div class="feature-item text-center h-100">
+            <h4 class="mb-3">SOS-Notruf</h4>
+            <p>Unauffällige Alarmauslösung mit automatischer Standortübermittlung</p>
+          </div>
         </div>
         <div class="col-md-4">
-          <h4>Live-Standort</h4>
-          <p>Teile in Echtzeit deinen Standort mit vertrauenswürdigen Kontakten.</p>
+          <div class="feature-item text-center h-100">
+            <h4 class="mb-3">Live-Standort</h4>
+            <p>Echtzeit-Positionsverfolgung für Ihre Sicherheit unterwegs</p>
+          </div>
         </div>
         <div class="col-md-4">
-          <h4>Diskrete Benachrichtigungen</h4>
-          <p>Alarme werden unauffällig versendet, ohne Aufmerksamkeit zu erregen.</p>
+          <div class="feature-item text-center h-100">
+            <h4 class="mb-3">Diskrete Hilfe</h4>
+            <p>Automatische Benachrichtigungen ohne Aufmerksamkeit zu erregen</p>
+          </div>
         </div>
       </div>
     </div>
@@ -50,37 +113,43 @@
 
   <section id="testimonials" class="py-5">
     <div class="container">
-      <h2 class="text-center">Was unsere Nutzer sagen</h2>
-      <div class="row mt-4">
+      <h2 class="text-center section-title">Stimmen unserer Nutzer</h2>
+      <div class="row g-4 mt-4">
         <div class="col-md-6">
-          <blockquote class="blockquote">
-            <p>„FeelSafe hat mir in einer unangenehmen Situation geholfen. Ich konnte meine Familie sofort benachrichtigen.“</p>
-            <footer class="blockquote-footer">Islam M.</footer>
-          </blockquote>
+          <div class="p-4 bg-white rounded-3 shadow-sm">
+            <blockquote>
+              <p class="mb-3">„FeelSafe hat mir in einer unangenehmen Situation geholfen. Ich konnte meine Familie sofort benachrichtigen.“</p>
+              <footer class="blockquote-footer mt-2">Islam M.</footer>
+            </blockquote>
+          </div>
         </div>
         <div class="col-md-6">
-          <blockquote class="blockquote">
-            <p>„Eine geniale App für mehr Sicherheit. Ich fühle mich viel entspannter, wenn ich abends unterwegs bin.“</p>
-            <footer class="blockquote-footer">Markus R.</footer>
-          </blockquote>
+          <div class="p-4 bg-white rounded-3 shadow-sm">
+            <blockquote>
+              <p class="mb-3">„Endlich fühle ich mich abends sicher auf dem Heimweg. Einfach genial!“</p>
+              <footer class="blockquote-footer mt-2">Markus R.</footer>
+            </blockquote>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="cta" class="bg-primary text-light text-center py-5">
+  <section id="cta" class="text-center text-white">
     <div class="container">
-      <h2>Jetzt FeelSafe herunterladen</h2>
-      <p>Schütze dich und deine Liebsten - lade die App jetzt kostenlos herunter.</p>
-      <a href="#" class="btn btn-light btn-lg mt-3">App herunterladen</a>
+      <h2 class="display-5 fw-bold mb-4">Sicherheit beginnt jetzt</h2>
+      <p class="fs-5 mb-5">Schützen Sie sich und Ihre Lieben - kostenlos und sofort</p>
+      <a href="https://github.com/Nayon0505/FeelSave.git" class="btn btn-light btn-cta" >Kostenlos downloaden</a>
     </div>
   </section>
   
-  <footer class="bg-dark text-light text-center py-3">
-    <p>&copy; 2025 FeelSafe. Alle Rechte vorbehalten.</p>
+  <footer class="bg-dark text-white py-5">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 FeelSafe. Alle Rechte vorbehalten.</p>
+    </div>
   </footer>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
