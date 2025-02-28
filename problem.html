@@ -5,62 +5,233 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Probleme & Zielgruppen - FeelSafe</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  <link rel="stylesheet" href="../css/styles.css">
+
+  <style>
+    .subsection {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      border-left: 5px solid #dc3545;
+      background-color: #f8f9fa;
+    }
+    .statistik-card {
+      border: 2px solid #dc3545;
+      border-radius: 15px;
+      transition: transform 0.3s;
+    }
+    .statistik-card:hover {
+      transform: translateY(-5px);
+    }
+    .feature-icon {
+      font-size: 2rem;
+      color: #dc3545;
+      margin-right: 1rem;
+    }
+  </style>
+
 </head>
 <body>
   <div id="navbar-container"></div>
   
-  <section id="problems" class="py-5">
-    <div class="container">
-      <h2>Probleme & Zielgruppen</h2>
+  <main class="container my-5">
+    <header class="text-center mb-5">
+      <h1 class="display-4">Sicherheit ist kein Privileg</h1>
+      <p class="lead">Ein Grundrecht, das wir neu definieren</p>
+    </header>
 
-      <br>
-
-      <h3>Die Probleme</h3>
-    
-      <br>
-
-      <ul>
-
-        <li>
-        <strong>Unsicherheit in kritischen Situationen:</strong> Viele Menschen, insbesondere Frauen und Kinder, fühlen sich in bestimmten Situationen unsicher. Sei es nachts auf dem Heimweg, in menschenleeren Gegenden oder in unbekannten Umgebungen. Diese Angst führt oft dazu, dass sie bestimmte Orte meiden oder sich unwohl fühlen, selbst wenn keine akute Gefahr besteht.
-      </li>
-      <br>
-
-      <li>
-        <strong>Fehlende diskrete Notfalllösungen:</strong> Aktuelle Sicherheitslösungen wie herkömmliche Notruf-Apps oder laute Alarmsysteme sind nicht immer alltagstauglich. Sie können auffällig sein oder in einer bedrohlichen Situation nur schwer zu aktivieren sein. Eine unauffällige und schnelle Möglichkeit, Hilfe zu rufen, ist essenziell.
-      </li>
-      <br>
-
-      <li>
-        <strong>Mangelndes Vertrauen durch Datenschutzbedenken:</strong> Viele Sicherheits-Apps verlangen umfangreiche persönliche Daten oder Standortfreigaben, ohne transparente Sicherheitsmaßnahmen zu bieten. Dies führt dazu, dass potenzielle Nutzer aus Sorge um ihre Privatsphäre auf solche Lösungen verzichten.
-      </li>
-      <br>
-
-      <li>
-        <strong>Zeitkritische Hilfe:</strong> In gefährlichen Situationen zählt jede Sekunde. Doch herkömmliche Notrufsysteme wie Polizei oder Rettungsdienste sind nicht immer sofort verfügbar oder können zu Verzögerungen führen. Eine direkte Benachrichtigung an vertraute Personen kann entscheidend sein.
-      </li>
-
-    </ul>
-
-      <br>
-
-      <h3>Unsere Zielgruppen</h3>
-
-      <br>
-
-    <p>
-      <strong>Primäre Zielgruppe:</strong> Unsere App richtet sich in erster Linie an Frauen im Alter von 16 bis 45 Jahren sowie Kinder. Diese Entscheidung basiert auf Statistiken, die zeigen, dass Frauen und Kinder überdurchschnittlich oft Opfer von Belästigung oder Bedrohung werden. Dennoch sind wir uns bewusst, dass es auch bei Männern viele Betroffene gibt - insbesondere bei Übergriffen, die aus Angst oder gesellschaftlichem Druck nicht zur Anzeige gebracht werden. Unsere Lösung steht daher allen Menschen offen, die sich in bestimmten Situationen unsicher fühlen.
-    </p>
-    <p>
-      <strong>Sekundäre Zielgruppe:</strong> Neben den direkt Betroffenen sind auch deren Angehörige, Freunde und Partner eine wichtige Zielgruppe. Viele Menschen sorgen sich um die Sicherheit ihrer Liebsten, insbesondere wenn diese nachts allein unterwegs sind oder sich in einer potenziell gefährlichen Umgebung aufhalten. FeelSafe ermöglicht es ihnen, im Notfall sofort informiert zu werden und schnell zu reagieren.
-    </p>
-    <p>
-      <strong>Weitere Nutzergruppen:</strong> Auch Menschen, die in sicherheitskritischen Berufen tätig sind, wie Pflegekräfte, Taxifahrer oder Sicherheitsdienste, könnten von unserer Lösung profitieren. Ebenso kann FeelSafe für ältere Menschen eine hilfreiche Unterstützung sein, um in einer Notsituation schnell Hilfe von Angehörigen zu erhalten.
-    </p>
-
+<section class="mb-5">
+  <div class="card shadow-sm mb-4">
+    <div class="card-header bg-danger text-white">
+      Wer fühlt sich wie unsicher?
     </div>
-  </section>
-  
+    <div class="card-body">
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="statistik-card p-3">
+            <h4 class="text-danger mb-4">
+              <i class="bi bi-geo"></i> Öffentliche Plätze
+            </h4>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="gender-label">
+                <i class="bi bi-gender-female text-danger"></i>
+                <span class="ms-2">Frauen</span>
+              </div>
+              <span class="badge bg-danger">58%</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="gender-label">
+                <i class="bi bi-gender-male text-primary"></i>
+                <span class="ms-2">Männer</span>
+              </div>
+              <span class="badge bg-primary">29%</span>
+            </div>
+            <p class="text-muted mt-3 mb-0 small">
+              meiden Orte nachts komplett
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="statistik-card p-3">
+            <h4 class="text-danger mb-4">
+              <i class="bi bi-bus-front"></i> ÖPNV
+            </h4>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="gender-label">
+                <i class="bi bi-gender-female text-danger"></i>
+                <span class="ms-2">Frauen</span>
+              </div>
+              <span class="badge bg-danger">52%</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="gender-label">
+                <i class="bi bi-gender-male text-primary"></i>
+                <span class="ms-2">Männer</span>
+              </div>
+              <span class="badge bg-primary">27%</span>
+            </div>
+            <p class="text-muted mt-3 mb-0 small">
+              verzichten nachts auf Bus & Bahn
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="statistik-card p-3">
+            <h4 class="text-danger mb-4">
+              <i class="bi bi-house-door"></i> Zu Hause
+            </h4>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="gender-label">
+                <i class="bi bi-gender-female text-danger"></i>
+                <span class="ms-2">Frauen</span>
+              </div>
+              <span class="badge bg-danger">41%</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="gender-label">
+                <i class="bi bi-gender-male text-primary"></i>
+                <span class="ms-2">Männer</span>
+              </div>
+              <span class="badge bg-primary">18%</span>
+            </div>
+            <p class="text-muted mt-3 mb-0 small">
+              verlassen nachts nicht das Haus
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="mt-4 text-center small text-muted">
+        Quelle: https://www.tagesspiegel.de/politik/sicherheitsgefuhl-in-deutschland-aus-furcht-meiden-es-viele-frauen-nachts-rauszugehen-8848975.html
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="mb-5">
+      <div class="card shadow-sm">
+        <div class="card-header bg-warning text-dark">
+          Warum wir handeln
+        </div>
+        <div class="card-body">
+          <div class="subsection">
+            <h3><i class="bi bi-exclamation-triangle"></i> Alltägliche Unsicherheit</h3>
+            <p>Vom Heimweg bis zum Park - ständige Vorsicht prägt den Alltag</p>
+          </div>
+          <div class="subsection">
+            <h3><i class="bi bi-megaphone"></i> Fehlende Diskretion</h3>
+            <p>Keine unauffällige Alarmierungsmöglichkeit in Notsituationen</p>
+          </div>
+          <div class="subsection">
+            <h3><i class="bi bi-shield-exclamation"></i> Intransparente Lösungen</h3>
+            <p>Datenschutzbedenken und unzuverlässige Alternativen</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="card shadow-sm">
+        <div class="card-header bg-info text-white">
+          Für wen wir entwickeln
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="subsection">
+                <h3 class="text-info">Primäre Nutzer:innen</h3>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-arrow-right"></i> Frauen 16-45 Jahre</li>
+                  <li><i class="bi bi-arrow-right"></i> Schüler:innen & Jugendliche</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="subsection">
+                <h3 class="text-info">Unterstützende</h3>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-arrow-right"></i> Eltern</li>
+                  <li><i class="bi bi-arrow-right"></i> Partner:innen</li>
+                  <li><i class="bi bi-arrow-right"></i> Freundeskreis</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="card shadow-sm">
+        <div class="card-header bg-success text-white">
+          Unsere Lösungen
+        </div>
+        <div class="card-body">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="subsection">
+                <h3><i class="bi bi-shield-check"></i> Diskreter Notfallbutton</h3>
+                <p>Unauffälliger SOS-Knopf ohne Risiko von Fehlalarmen</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="subsection">
+                <h3><i class="bi bi-geo-alt"></i> Automatische Alarmierung</h3>
+                <p>Standortbasierte Gefahrenerkennung</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="subsection">
+                <h3><i class="bi bi-chat-dots"></i> Kontextnachrichten</h3>
+                <p>Persönliche Hinweise für Helfer:innen</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="subsection">
+                <h3><i class="bi bi-diagram-3"></i> Sicherheitssystem</h3>
+                <p>Eine durchdachte Möglichkeit zur Alltagslösung</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="card border-danger">
+        <div class="card-body text-center">
+          <blockquote class="blockquote mb-0">
+            <p class="text-danger">„Es ist nicht die Aufgabe von Frauen, sich einzuschränken – 
+            es ist die Aufgabe der Gesellschaft, Sicherheit zu garantieren.“</p>
+            <footer class="blockquote-footer mt-3">FeelSave Vision 2025</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
   <footer class="bg-dark text-light text-center py-3">
     <p>&copy; 2025 FeelSafe. Alle Rechte vorbehalten.</p>
   </footer>
