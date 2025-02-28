@@ -2,8 +2,6 @@
  
 Guten Tag, Frau Scholl, hier haben wir eine Anleitung für Sie vorbereitet, wie man unsere Internetseite ausführt.
 
-# Anleitung zur Ausführung der Website
-
 ## Schritte zur Installation und Ausführung
 
 1. **Projekt herunterladen**
